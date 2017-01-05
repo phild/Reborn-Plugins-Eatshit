@@ -1,6 +1,6 @@
 ﻿namespace EatShit.Gui
 {
-	partial class SettingsForm
+	partial class EatShitSettingsForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -31,17 +31,19 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.button1);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(24, 24);
-			this.groupBox1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+			this.groupBox1.Margin = new System.Windows.Forms.Padding(9);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
 			this.groupBox1.Size = new System.Drawing.Size(471, 166);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
@@ -53,7 +55,7 @@
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.ItemHeight = 24;
 			this.comboBox1.Location = new System.Drawing.Point(13, 68);
-			this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+			this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(444, 32);
 			this.comboBox1.TabIndex = 1;
@@ -69,15 +71,25 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Food Name";
 			// 
-			// SettingsForm
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(145, 110);
+			this.button1.Name = "SaveButton";
+			this.button1.Size = new System.Drawing.Size(177, 47);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "Save";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// EatShitSettingsForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(521, 216);
 			this.Controls.Add(this.groupBox1);
-			this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-			this.Name = "SettingsForm";
-			this.Text = "Eat Me";
+			this.Margin = new System.Windows.Forms.Padding(6);
+			this.Name = "EatShitSettingsForm";
+			this.Text = "EatShit Settings";
 			this.Load += new System.EventHandler(this.SettingsForm_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
@@ -90,5 +102,6 @@
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button button1;
 	}
 }

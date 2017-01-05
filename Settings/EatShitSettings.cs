@@ -7,7 +7,7 @@ namespace EatShit.Settings
 {
     public class EatShitSettings : JsonSettings
     {   
-        public EatShitSettings() : base(CharacterSettingsDirectory + "/EatShit/GourmetGuy.json")
+        public EatShitSettings() : base(CharacterSettingsDirectory + "/EatShit/EatShit.json")
         {
         }
 
@@ -20,6 +20,8 @@ namespace EatShit.Settings
 
         [Setting]
         [DefaultValue("")]
+
         public string FoodName { get; set; }
     }
+
 }
